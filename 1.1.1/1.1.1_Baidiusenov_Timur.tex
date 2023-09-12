@@ -48,6 +48,7 @@ R_{\mbox{пр}}=R_{\mbox{пр2}} \left( 1-\frac{R_{\mbox{А}}}{R_{\mbox{пр2}}}
 \section{Оборудование}
 
 \begin{table}[H]
+\centering
 \caption{Характеристики вольтметра}
 \begin{tabular}{|c|c|}
 \hline
@@ -73,6 +74,7 @@ R_{\mbox{пр}}=R_{\mbox{пр2}} \left( 1-\frac{R_{\mbox{А}}}{R_{\mbox{пр2}}}
 \end{table}
 
 \begin{table}[H]
+\centering
 \caption{Характеристики амперметра}
 \begin{tabular}{|c|c|}
 \hline
@@ -90,6 +92,7 @@ R_{\mbox{пр}}=R_{\mbox{пр2}} \left( 1-\frac{R_{\mbox{А}}}{R_{\mbox{пр2}}}
 \end{table}
 
 \begin{table}[H]
+\centering
 \caption{Характеристики моста постоянного тока P4833}
 \begin{tabular}{|c|c|}
 \hline
@@ -130,6 +133,7 @@ $N_{\mbox{изм}}$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
 \end{table}
 
 \begin{table}[H]
+\centering
 \caption{Обработка результатов измерения диаметра}
 \begin{tabular}{|c|c|c|}
 \hline
@@ -164,6 +168,7 @@ S=\frac{\pi {d_}^2}{4} = \frac{\mbox{3.14} \cdot \left({\mbox{3.68} \cdot {\mbox
 \subsection{Измерения сопротивления проволоки}
 
 \begin{table}[H]
+\centering
 \caption{Результаты измерения напряжения и силы тока}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
@@ -227,6 +232,7 @@ V, мВ & 368 & 388 & 432 & 476 & 512  \\
 \end{figure}
 
 \begin{table}[H]
+\centering
 \caption{Результаты измерения сопротивления проволок с помощью амперметра и вольтметра}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
@@ -244,7 +250,7 @@ $l, $см & $R_{\mbox{ср}}$, Ом & $\sigma_{R_{\mbox{ср}}}^{\mbox{случ}
 Вычислим $\sigma_{R_{\mbox{ср}}}^{\mbox{случ}}$ по формуле:
 
 \begin{equation}
-\sigma_{R_{\mbox{ср}}}^{\mbox{случ}}=\frac{\sqrt{\sum_{\mbox{i = 1}}^{10}{\frac{V{\mbox{i}}^2}{I{\mbox{i}}^2}}-R_{\mbox{ср}}^2}}{\sqrt{10} \cdot \sqrt{9}} \cdot t_{\mbox{p}}
+\sigma_{R_{\mbox{ср}}}^{\mbox{случ}}=\frac{\sqrt{\sum_{i = 1}^{10}{\frac{V{\mbox{i}}^2}{I{\mbox{i}}^2}}-R_{\mbox{ср}}^2}}{\sqrt{10} \cdot \sqrt{9}} \cdot t_{\mbox{p}}
 \end{equation}
 
 Возможную систематическую погрешность $R_{\mbox{ср}}$ оцениваем по формуле:
@@ -254,6 +260,7 @@ $l, $см & $R_{\mbox{ср}}$, Ом & $\sigma_{R_{\mbox{ср}}}^{\mbox{случ}
 \end{equation}
 
 \begin{table}[H]
+\centering
 \caption{Результаты измерения сопротивления проволок с помощью моста P4833}
 \begin{tabular}{|c|c|}
 \hline
@@ -284,6 +291,7 @@ $l, $см & $R_0$, Ом \\
 Значения удельного сопротивления для каждой из длин представлены в таблице 9
 
 \begin{table}[H]
+\centering
 \caption{Результаты $\rho$ для каждой из длин проволок}
 \begin{tabular}{|c|c|c|}
 \hline
@@ -302,5 +310,6 @@ $l$, см & $\rho$, $10^{-6}$ Ом $\cdot$м &$\sigma_{\rho}$, $10^{-8}$Ом$\cd
 
 \section{Вывод}
 Полученное значение удельного сопротивления сравниваем с табличными значениями. В справочнике (Физические величины. М.:Энергоиздат, 1991. С. 444) для удельного сопротивления нихрома при 20 \textdegree C, значения в зависимости от массового содержания компонент сплава меняются от 1.12$\cdot10^{-4}$ Ом$\cdot$см до 0.97$\cdot10^{-4}$ Ом$\cdot$см. Наиболее близкое значение к получившемуся в работе 1.06$\cdot10^{-4}$ Ом$\cdot$см.
+Мои значения совпали в пределах погрешности: $\rho = (1.08 \pm 0.05)\cdot 10^{-6}$ Ом$\cdot$м.
 
 \end{document}
