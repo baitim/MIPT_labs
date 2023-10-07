@@ -153,6 +153,21 @@ n=\frac{\sigma_{t}}{T\epsilon_T} = \frac{0,026} {1,5\cdot10^{-3}} \approx 17
 \end{tabular}
 \end{table}
 
+Для установки А вычислим g по формуле:
+\begin{equation}
+g = 4 \pi^{2} \frac{l^{2}/12 + a^{2}}{T^{2}x_{\mbox{ц}}(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})}
+\end{equation}
+
+Определим погрешность по формуле:
+\begin{eqnarray}
+\sigma_{g} = 4\pi^{2} \sqrt{ (\frac{l}{6T^{2}x_{\mbox{ц}}(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})}\sigma_{l})^{2} + (\frac{2a}{T^{2}x_{\mbox{ц}}(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})}\sigma_{a})^{2} + (-2\frac{l^{2}/12 + a^{2}}{T^{3}x_{\mbox{ц}}(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})} \sigma_{T})^{2}+}\nonumber \\
+\overline{+ (-\frac{l^{2}/12 + a^{2}}{T^{2}x_{\mbox{ц}}^2(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})}\sigma_{x_{\mbox{ц}}})^{2} + (-\frac{l^{2}/12 + a^{2}}{T^{2}x_{\mbox{ц}}}\frac{m_{\mbox{ст}}}{(m_{\mbox{пр}} + m_{\mbox{ст}})^2}\sigma_{m_{\mbox{пр}}})^{2}+}\nonumber \\
+\overline{+ (\frac{l^{2}/12 + a^{2}}{T^{2}x_{\mbox{ц}}}\frac{m_{\mbox{пр}}}{(m_{\mbox{пр}} + m_{\mbox{ст}})^2}\sigma_{m_{\mbox{ст}}})^{2}}
+\end{eqnarray}
+
+Усредним значения $g$, получим: $g_{\mbox{a,ср}} = 9,84 \pm 0.07$ м/$c^2$
+
+
 \begin{table}[H]
 \centering
 \caption{Результаты измерения периода для установки Б(с грузом)}
@@ -170,19 +185,40 @@ n=\frac{\sigma_{t}}{T\epsilon_T} = \frac{0,026} {1,5\cdot10^{-3}} \approx 17
 \end{tabular}
 \end{table}
 
-Для установки А вычислим g по формуле:
+Для установки Б вычислим g по формуле:
 \begin{equation}
-g = 4 \pi^{2} \frac{l^{2}/12 + a^{2}}{T^{2}x_{\mbox{ц}}(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})}
+g = \frac{4\pi^{2}}{T^2} \frac{J_0 + m_{\mbox{г}}y^2}{Mx_{\mbox{ц}}}
 \end{equation}
+где $J_o = \frac{m_{\mbox{ст}}l_{\mbox{ст}}^2}{12} + m_{\mbox{ст}}a^2$
 
-Определим погрешность по формуле:
-\begin{eqnarray}
-\sigma_{g} = 4\pi^{2} \sqrt{ (\frac{l}{6T^{2}x_{\mbox{ц}}(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})}\sigma_{l})^{2} + (\frac{2a}{T^{2}x_{\mbox{ц}}(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})}\sigma_{a})^{2} + (-2\frac{l^{2}/12 + a^{2}}{T^{3}x_{\mbox{ц}}(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})} \sigma_{T})^{2}+}\nonumber \\
-\overline{+ (-\frac{l^{2}/12 + a^{2}}{T^{2}x_{\mbox{ц}}^2(1+\frac{m_{\mbox{пр}}}{m_{\mbox{ст}}})}\sigma_{x_{\mbox{ц}}})^{2} + (-\frac{l^{2}/12 + a^{2}}{T^{2}x_{\mbox{ц}}}\frac{m_{\mbox{ст}}}{(m_{\mbox{пр}} + m_{\mbox{ст}})^2}\sigma_{m_{\mbox{пр}}})^{2}+}\nonumber \\
-\overline{+ (\frac{l^{2}/12 + a^{2}}{T^{2}x_{\mbox{ц}}}\frac{m_{\mbox{пр}}}{(m_{\mbox{пр}} + m_{\mbox{ст}})^2}\sigma_{m_{\mbox{ст}}})^{2}}
-\end{eqnarray}
+Усредним значения $g$, получим: $g_{\mbox{b,ср}} = 9,93\pm 0.07$ м/$c^2$
+
+Построим график зависимости T(y):
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{T(a)}
+\end{center}
+\end{figure}
+
+Найдем минимум с помощью графика:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{T(a)+min}
+\end{center}
+\end{figure}
+
+$T_{min} = 1.345 $ с согласно графику, что согласуется с теоретическим расчетом ($T_{min} = 1.52$ с). Однако измерение с помощью графика имеет существенную погрешность.
+
+Построим график в координатах $u=T^2y$, $v = y^2$:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{U(v)}
+\end{center}
+\end{figure}
+
+Определим $g$ с помощью графика, методом наименьших квадратов и оценим погрешность. В итоге получим, \[g=9.565 \pm 0.39 \mbox{ м/}c^2\]
 
 \section{Вывод}
-Определил справедливость формул периода колебаний для физического маятника и значение g. Во время выполнения работы исследовалал зависимость периода колебаний физического маятника от его момента инерции. При обработке результатов оценил погрешность прямых и косвенных измерений.
+Определил справедливость формул периода колебаний для физического маятника и значение g. Во время выполнения работы исследовалал зависимость периода колебаний физического маятника от его момента инерции. При обработке результатов оценил погрешность прямых и косвенных измерений. В результате в обоих случаях были получены значения действительному: средее арифметическое: $g_{\mbox{b,ср}} = 9,93$\pm 0.07 м/с$^2$, по МНК: $g=9.565 \pm 0.39 \mbox{ м/}c^2$.
 
 \end{document}
